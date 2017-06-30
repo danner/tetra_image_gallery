@@ -1,0 +1,5 @@
+<div class="card-columns">
+  <% results.forEach(function(image){ %>
+    <%- include('thumbnail', {image: image}); %>
+  <% }); %>
+</div>

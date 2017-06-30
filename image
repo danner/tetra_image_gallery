@@ -1,0 +1,29 @@
+create table test_table (id integer, name text);
+insert into test_table values (1, 'hello database');
+\q
+\q
+create table image (id integer, title text, description text, created_on date, modified_on date, imgur_id text, imgur_link text);
+ALTER TABLE image ALTER COLUMN created_on SET DEFAULT now();
+ALTER TABLE image ALTER COLUMN modified_on SET DEFAULT now();
+show table image
+explain image
+;
+show table image;
+show image;
+explain image;
+select * from image;
+\q
+show tables;
+show table;
+show databases;
+show database;
+select * from image;
+\q
+explain image;
+\d image
+\q
+\s image
+\d
+\l image
+\q
+\s image
